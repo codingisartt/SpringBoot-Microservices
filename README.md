@@ -16,8 +16,8 @@ This project consists of the following microservices:
 
 Client communicates with Catalog Service
 Catalog Service fetches data from:
-Movie Info Service
-Rating Data Service
+   Movie Info Service
+   Rating Data Service
 All services are registered with Eureka Discovery Server
 
 Client
@@ -28,6 +28,7 @@ Movie Info  Rating Data
    |
 Discovery Server (Eureka)
 
+
 ## Technologies Used
 
 Java 17
@@ -35,6 +36,7 @@ Spring Boot 2.7.x
 Spring Cloud 2021.0.x
 Netflix Eureka
 Maven
+IntelliJ IDEA
 
 ## How to Run the Application
 Start Discovery Server

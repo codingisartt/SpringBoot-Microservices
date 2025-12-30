@@ -20,42 +20,36 @@ Catalog Service fetches data from:
    Rating Data Service
 All services are registered with Eureka Discovery Server
 
-Client
-   |
-Catalog Service
-   |        |
-Movie Info  Rating Data
-   |
-Discovery Server (Eureka)
-
-
 ## Technologies Used
 
-Java 17
-Spring Boot 2.7.x
-Spring Cloud 2021.0.x
-Netflix Eureka
-Maven
-IntelliJ IDEA
+- Java 17
+- Spring Boot 2.7.x
+- Spring Cloud Netflix Eureka
+- Maven
+- RESTful APIs
 
 ## How to Run the Application
 Start Discovery Server
+```bash
   cd discovery-server
   mvn spring-boot:run
-Eureka Dashboard: http://localhost:8761
+```
 
 Start Movie Info Service
+```bash
   cd movie-info-service
   mvn spring-boot:run
-  
+```
 Start Rating Data Service
+```bash
   cd rating-data-service
   mvn spring-boot:run
-
+```
 Start Catalog Service
+```bash
   cd catalog-service
   mvn spring-boot:run
-
+```
 ## Service Registration Check
 
 After all services are running, the following services should appear on the Eureka Dashboard: http://localhost:8761
@@ -65,16 +59,16 @@ RATING-DATA-SERVICE
 CATALOG-SERVICE
 
 ## Sample API Endpoint
-GET http://localhost:8081/catalog/{userId} 
-GET http://localhost:8081/catalog/john
+- GET http://localhost:8081/catalog/{userId} 
+- GET http://localhost:8081/catalog/john
 
 ## Key Concepts Covered
 
-Microservices architecture
-Service Discovery with Eureka
-Spring Cloud Netflix integration
-RESTful inter-service communication
-Centralized service registration
+- Microservices architecture
+- Service Discovery with Eureka
+- Spring Cloud Netflix integration
+- RESTful inter-service communication
+- Centralized service registration
 
 <img width="1221" height="518" alt="image" src="https://github.com/user-attachments/assets/c3e26e51-cad2-465f-afed-aaf1d4ca5f59" />
 

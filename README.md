@@ -20,6 +20,15 @@ Catalog Service fetches data from:
    Rating Data Service
 All services are registered with Eureka Discovery Server
 
+Client
+   |
+Catalog Service
+   |        |
+Movie Info  Rating Data
+   |
+Discovery Server (Eureka)
+
+
 ## Technologies Used
 
 Java 17

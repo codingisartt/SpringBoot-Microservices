@@ -72,4 +72,22 @@ CATALOG-SERVICE
 
 <img width="1221" height="518" alt="image" src="https://github.com/user-attachments/assets/c3e26e51-cad2-465f-afed-aaf1d4ca5f59" />
 
+## External API Integration
+
+This service fetches movie details from the **TMDB (The Movie Database) API**.
+
+- Calls TMDB using `RestTemplate`
+- Maps the response to `MovieSummary`
+- Returns selected fields as a `Movie` object
+
+**External API:**  
+`https://api.themoviedb.org/3/movie/{movieId}`
+
+> API key is stored in `application.properties` and not committed to the repository.
+
+## Example API Call
+
+http://localhost:8082/movies/550
+
+<img width="605" height="131" alt="image" src="https://github.com/user-attachments/assets/415d34be-f72e-49af-b6f9-33ead05317ab" />
 

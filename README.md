@@ -91,3 +91,24 @@ http://localhost:8082/movies/550
 
 <img width="605" height="131" alt="image" src="https://github.com/user-attachments/assets/415d34be-f72e-49af-b6f9-33ead05317ab" />
 
+## Fault Tolerance with Hystrix
+
+This service uses Netflix Hystrix to handle failures when calling downstream services.
+
+## Fallback behavior
+
+- When Movie Info Service is unavailable or down
+- Hystrix automatically triggers a fallback method
+- The application continues to respond without crashing
+
+## Example scenario
+
+- movie-info-service is stopped
+- movie-catalog-service is called
+
+Instead of failing, a fallback response is returned
+http://localhost:8081/catalog/53
+
+<img width="208" height="126" alt="image" src="https://github.com/user-attachments/assets/c39897ea-03ac-44a4-9211-02400502ef50" />
+
+

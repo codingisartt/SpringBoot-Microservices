@@ -25,15 +25,6 @@ import java.util.stream.Collectors;
 public class MovieCatalogResource {
 
     @Autowired
-    private RestTemplate restTemplate;
-
-    @Autowired
-    private DiscoveryClient discoveryClient;
-
-    @Autowired
-    private WebClient.Builder webClientBuilder;
-
-    @Autowired
     MovieInfo movieInfo;
 
     @Autowired
